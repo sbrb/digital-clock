@@ -1,0 +1,35 @@
+ body {
+     background-color: #fff6ae;
+ }
+
+ .Clock {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     color: lime;
+     transform: translateX(-50%) translateY(-50%);
+     font-family: Orbitron;
+     font-size: 60px;
+     letter-spacing: 7px;
+     font-size: 80px;
+     color: rgb(204, 0, 255);
+     text-align: center;
+     -webkit-animation: glow 1s ease-in-out infinite alternate;
+     -moz-animation: glow 1s ease-in-out infinite alternate;
+     animation: glow 1s ease-in-out infinite alternate;
+ }
+
+ .Clock {
+     border-radius: 2px solid red;
+     display: block;
+ }
+
+ @-webkit-keyframes glow {
+     from {
+         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px limegreen, 0 0 40px lime, 0 0 50px lime, 0 0 60px lime, 0 0 70px lime;
+     }
+
+     to {
+         text-shadow: 0 0 20px #fff, 0 0 30px green, 0 0 40px green, 0 0 50px green, 0 0 60px green, 0 0 70px green, 0 0 80px green;
+     }
+ }
